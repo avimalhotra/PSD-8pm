@@ -58,7 +58,7 @@ body{
 .flex{ display: flex;}
 .justify-space-bet{ justify-content: space-between;}
 .align-center{ align-items: center;}
-
+.gy-4{ row-gap: 4rem; }
 
 /* custom css */
 header{ background: #000; color: #fff; position: sticky; top: 0; z-index: 10;}
@@ -81,17 +81,86 @@ header label span{ display: block; height: 2px; background: var(--red);  margin:
 .banner a{ color: var(--red);}
 
 
+.wrap-3{ background: var(--red); color: #fff; padding: 50px 0;}
+h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom: 2rem;}
+.circle{ width: 100px; height: 100px; border: 2px solid; flex-shrink: 0; border-radius: 50%; display: grid; place-items: center; margin-right: 2rem; font-size: 36px; }
+.wrap-3 h3{ font-size: 16px; line-height: 30px; margin-bottom: 10px; }
+.wrap-3 p{ font-size: 14px; line-height: 22px; font-weight: 100; }
 
 
+.wrap-4{ font-size: 36px; background: #fff; color: var(--red); text-align: center; line-height: 10rem; }
+
+
+.wrap-5{ background: #ebebeb; color: #363636; padding: 100px 0;}
+.wrap-5 .btn{ margin: 0 10px 60px 0; }
+.btn.active{ background: var(--red); color: #fff; border: none;}
+.work{ position: relative; margin-bottom: 2rem; overflow: hidden;}
+.work img{ max-width: 100%; height: auto; }
+.work figcaption{ position: absolute; background: #fff; left: 0; right: 0; bottom: -100px; text-align: center; padding: 20px 0; transition: .3s; }
+.work figcaption h3{ font-size: 18px; color: var(--red); line-height: 40px; }
+.work figcaption p{ font-size: 14px; font-weight: 100; color: #898989; line-height: 20px; }
+.work:hover figcaption{ bottom: 0; }
+.seemore{ background: none; border: none;  ;font-size: 36px; color: var(--red); }
+
+
+
+.wrap-6{ background: #666; color: #fff;  padding: 4rem 0 2rem; }
+.reviews{ text-align: center;}
+.review{ display: none;}
+.review.active{ display: block;}
+.review footer{ margin-top: 17px;}
+.review q{ font-size: 36px; line-height: 41px; font-weight: 100; }
+.review b{ display: block;}
+.review img{ margin-bottom: 10px;}
+.pager{ display: flex; justify-content: center; margin-top: 25px;}
+.pager li{ margin: 5px; }
+.pager a{ display: block; width: 10px; height: 10px; border: 2px solid #fff; border-radius: 50%; }
+.pager a.active{ background: #fff;}
+
+
+
+
+.wrap-7{ background: #fff; color: #363636; padding: 100px 0;}
+.team{ margin: 50px 0 33px; position: relative;}
+.social{ position: absolute; display: flex; top: 60px; right: 60px;}
+.social li{ margin-left: 10px;}
+.social a{ display: block; background: var(--red); color: #fff; font-size: 24px; border-radius: 50%; width: 50px; line-height: 50px; text-align: center;}
+.gap{ margin: 50px 0 0 100px;}
+.gap h3{ color: var(--red); font-size: 18px; }
+.gap small{ color:#898989; font-weight: 100; font-size: 14px; }
+.gap p{ color:#363636; font-weight: 100; font-size: 14px; line-height: 22px; margin-top: 25px; }
+
+
+.wrap-8{ background: #666; color: #fff; padding: 80px 0 40px; text-align: center;}
+.wrap-8 span.fa{ font-size: 72px;}
+.wrap-8 p{ font-size: 72px; font-weight: 100;}
+.wrap-8 b{ font-size: 18px; margin-bottom: 40px; display: inline-block}
+
+
+
+.wrap-9{ background: #fff; color: #363636; padding: 100px 0;}
+canvas{ background: #ddd; margin-top: 50px; max-width: 100%;}
+.accordion{ margin-top: 50px; }
+.accordion li{ margin-bottom: 10px;}
+.accordion li a{ display: block; color: #898989; font-size: 14px; font-weight: bold; line-height: 48px; border: 1px solid; padding: 0 18px; border-radius: 10px; }
+.accordion li a span.fa{ font-size: 24px; margin-right: 18px; vertical-align: middle;}
+.accordion li p{ margin: 22px; font-size: 14px; font-weight: 100; color: #363636; line-height: 22px; display: none;}
+.accordion li a.active{ color: var(--red);}
+.accordion li:first-child p{ display: block;}
+.accordion li a::after{ content: '+'; float: right;}
+.accordion li a.active::after{ content: '-'; }
 
 
 
 
 @media screen and (max-width:1220px){
     html{ font-size: 13px;}
+    h2{ font-size: 62px; }
+    .social{ right: 0;}
 }
 
 @media screen and (max-width:980px){
+    h2{ font-size: 68px;}
     html{ font-size: 13px;}
     .col-t-1{ flex-basis: 8.33%; max-width: 8.33%;}
     .col-t-2{ flex-basis: 16.663%; max-width: 16.66%;}
@@ -107,6 +176,10 @@ header label span{ display: block; height: 2px; background: var(--red);  margin:
     .col-t-12{ flex-basis: 100%; max-width: 100%;}
     .banner p{ font-size: 3rem;}
     .banner .flex{ flex-flow: column wrap;}
+    .gap{ margin-left: 50px;}
+    .social{ flex-flow: column wrap; top: 0;}
+    .social li{ margin: 0 0 10px 0;}
+    .wrap-8 p{ font-size: 60px;}
 }
 
 @media screen and (max-width:767px){
