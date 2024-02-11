@@ -1,0 +1,150 @@
+*{ margin: 0; box-sizing: border-box;}
+a{ text-decoration: none;}
+button{ padding: 0; cursor: pointer;}
+img{ vertical-align: bottom;}
+ul{ list-style: none; padding: 0;}
+label{ display: block;}
+
+
+@font-face {
+    font-family: proxima;
+    font-weight: 400;
+    src: url(../fonts/proximanova-regular.woff2);
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima;
+    font-weight: 700;
+    src: url(../fonts/proximanova-bold.woff2);
+    font-display: swap;
+}
+@font-face {
+    font-family: proxima;
+    font-weight: 100;
+    src: url(../fonts/proximanova-thin.woff2);
+    font-display: swap;
+}
+
+html{
+    font-size: 15px;
+    --ff:proxima, sans-serif;
+    --red:#ca3c3c;
+}
+body{
+    font-size: 16px;
+    font-family: var(--ff);
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.row{ display: flex; flex-flow: row wrap; margin: 0 -1rem;}
+[class^="col-"]{ padding: 0 1rem; flex: 1 0 auto}
+.col-1{ flex-basis: 8.33%; max-width: 8.33%;}
+.col-2{ flex-basis: 16.663%; max-width: 16.66%;}
+.col-3{ flex-basis: 25%; max-width: 25%;}
+.col-4{ flex-basis: 33.33%; max-width: 33.33%;}
+.col-5{ flex-basis: 41.66%; max-width: 41.66%;}
+.col-6{ flex-basis: 50%; max-width: 50%;}
+.col-7{ flex-basis: 58.33%; max-width: 58.33%;}
+.col-8{ flex-basis: 66.66%; max-width: 66.66%;}
+.col-9{ flex-basis: 75%; max-width: 75%;}
+.col-10{ flex-basis: 83.33%; max-width: 83.33%;}
+.col-11{ flex-basis: 91.66%; max-width: 91.66%;}
+.col-12{ flex-basis: 100%; max-width: 100%;}
+.flex{ display: flex;}
+.justify-space-bet{ justify-content: space-between;}
+.align-center{ align-items: center;}
+
+
+/* custom css */
+header{ background: #000; color: #fff; position: sticky; top: 0; z-index: 10;}
+h1{ font-size: 2rem;}
+header a{ display: inline-block; color: inherit; line-height: 80px;}
+header nav{ margin-left: -20px;}
+header ul{}
+header li{ margin: 0 5px;}
+header a{  padding: 0 1rem; }
+.btn{ background: none; border: 2px solid; color: var(--red); width: 90px; height: 35px; border-radius: 10px; font: 16px var(--ff); }
+header label{ text-align: center; line-height: 31px !important; position: absolute; right: 1rem; top: 20px; display: none; }
+header label span{ display: block; height: 2px; background: var(--red);  margin: 6px 10px; }
+.collapse{ transition: .5s;  }
+#chk:checked + .collapse{  opacity: 1; visibility: visible; }
+
+
+.banner{background: #666; color: #fff; padding: 20rem 0;}
+.banner button{ border: none; background: none; font-size: 10rem; color: inherit; margin-right: 40px;}
+.banner p{ font-size: 4rem; font-weight: 100;}
+.banner a{ color: var(--red);}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1220px){
+    html{ font-size: 13px;}
+}
+
+@media screen and (max-width:980px){
+    html{ font-size: 13px;}
+    .col-t-1{ flex-basis: 8.33%; max-width: 8.33%;}
+    .col-t-2{ flex-basis: 16.663%; max-width: 16.66%;}
+    .col-t-3{ flex-basis: 25%; max-width: 25%;}
+    .col-t-4{ flex-basis: 33.33%; max-width: 33.33%;}
+    .col-t-5{ flex-basis: 41.66%; max-width: 41.66%;}
+    .col-t-6{ flex-basis: 50%; max-width: 50%;}
+    .col-t-7{ flex-basis: 58.33%; max-width: 58.33%;}
+    .col-t-8{ flex-basis: 66.66%; max-width: 66.66%;}
+    .col-t-9{ flex-basis: 75%; max-width: 75%;}
+    .col-t-10{ flex-basis: 83.33%; max-width: 83.33%;}
+    .col-t-11{ flex-basis: 91.66%; max-width: 91.66%;}
+    .col-t-12{ flex-basis: 100%; max-width: 100%;}
+    .banner p{ font-size: 3rem;}
+    .banner .flex{ flex-flow: column wrap;}
+}
+
+@media screen and (max-width:767px){
+    html{ font-size: 12px;}
+    .col-m-1{ flex-basis: 8.33%; max-width: 8.33%;}
+    .col-m-2{ flex-basis: 16.663%; max-width: 16.66%;}
+    .col-m-3{ flex-basis: 25%; max-width: 25%;}
+    .col-m-4{ flex-basis: 33.33%; max-width: 33.33%;}
+    .col-m-5{ flex-basis: 41.66%; max-width: 41.66%;}
+    .col-m-6{ flex-basis: 50%; max-width: 50%;}
+    .col-m-7{ flex-basis: 58.33%; max-width: 58.33%;}
+    .col-m-8{ flex-basis: 66.66%; max-width: 66.66%;}
+    .col-m-9{ flex-basis: 75%; max-width: 75%;}
+    .col-m-10{ flex-basis: 83.33%; max-width: 83.33%;}
+    .col-m-11{ flex-basis: 91.66%; max-width: 91.66%;}
+    .col-m-12{ flex-basis: 100%; max-width: 100%;}
+    header label{ display: block;}
+    .collapse{ opacity: 0; visibility: hidden;  position: absolute; left: 0; right: 0; background: #000; top: 80px; padding: 1rem;}
+    header .flex{ flex-flow: column wrap; text-align: right;}
+    header nav a{ line-height: 40px;}
+    header nav{ margin-left: 0; width: 100%;}
+}
+@media screen and (max-width:460px){
+    .col-p-1{ flex-basis: 8.33%; max-width: 8.33%;}
+    .col-p-2{ flex-basis: 16.663%; max-width: 16.66%;}
+    .col-p-3{ flex-basis: 25%; max-width: 25%;}
+    .col-p-4{ flex-basis: 33.33%; max-width: 33.33%;}
+    .col-p-5{ flex-basis: 41.66%; max-width: 41.66%;}
+    .col-p-6{ flex-basis: 50%; max-width: 50%;}
+    .col-p-7{ flex-basis: 58.33%; max-width: 58.33%;}
+    .col-p-8{ flex-basis: 66.66%; max-width: 66.66%;}
+    .col-p-9{ flex-basis: 75%; max-width: 75%;}
+    .col-p-10{ flex-basis: 83.33%; max-width: 83.33%;}
+    .col-p-11{ flex-basis: 91.66%; max-width: 91.66%;}
+    .col-p-12{ flex-basis: 100%; max-width: 100%;}
+}
+
+
+@media screen and (max-width:359px){
+
+}
